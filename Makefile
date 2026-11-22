@@ -1,9 +1,11 @@
 # ESP32 Desktop Hardware Simulator Makefile
 
-.PHONY: help dev dev-web build package package-mac package-win package-linux test clean
+.PHONY: help setup setup-web dev dev-web build package package-mac package-win package-linux test clean
 
 help:
 	@echo "ESP32 Simulator Parancsok:"
+	@echo "  make setup        - Lokális környezet összerakása (npm + arduino-cli + ESP32 core + libek)"
+	@echo "  make setup-web    - Csak npm függőségek (firmware toolchain nélkül)"
 	@echo "  make dev          - Asztali Electron alkalmazás indítása fejlesztői módban"
 	@echo "  make dev-web      - Webes felület indítása böngészőben (http://localhost:5173)"
 	@echo "  make build        - Teljes TypeScript + Vite + Electron fordítás"
@@ -13,6 +15,12 @@ help:
 	@echo "  make package-linux- Linux (.AppImage / .deb) telepítő csomagolása"
 	@echo "  make test         - Típusellenőrzés és tesztek futtatása"
 	@echo "  make clean        - Fordítási fájlok (dist, dist-electron, release) törlése"
+
+setup:
+	@./scripts/setup.sh
+
+setup-web:
+	@./scripts/setup.sh --no-firmware
 
 dev:
 	@./scripts/dev.sh electron

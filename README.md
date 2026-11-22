@@ -10,6 +10,19 @@ A szimulátor célja, hogy teljes értékű, vizuális és interaktív tesztkör
 
 A projekt egyszerűen futtatható és fordítható az alábbi **egy-kattintásos scriptekkel** vagy a **Makefile** segítségével:
 
+### 0. Első telepítés (friss klón után)
+```bash
+# Minden: npm függőségek + arduino-cli (tools/) + ESP32 core + Arduino libek + ellenőrző fordítás
+./scripts/setup.sh
+# vagy:
+make setup
+
+# Csak a szimulátor (firmware toolchain nélkül):
+./scripts/setup.sh --no-firmware
+# vagy:
+make setup-web
+```
+
 ### 1. Futtatás fejlesztői módban (Dev)
 ```bash
 # Asztali Electron alkalmazás indítása fejlesztői módban:
