@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+dist-electron/
+firmware/build/
+
+# Local tooling binaries (download arduino-cli separately)
+tools/arduino-cli
+
+# Scratch / temp
+scratch/
+
+# OS / editor
+.DS_Store
+*.log
+.env*

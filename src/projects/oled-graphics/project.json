@@ -1,0 +1,21 @@
+{
+  "id": "proj_oled_graphics",
+  "name": "SSD1306 OLED Graphics & Animation",
+  "description": "Geometriai alakzatok, animációk és szövegek rajzolása 128x64 OLED kijelzőre",
+  "version": "1.0.0",
+  "author": "ESP Developer",
+  "targetBoard": "ESP32_DEVKIT_V1",
+  "mainFile": "src/main.ino",
+  "tags": [
+    "OLED",
+    "Graphics",
+    "SSD1306"
+  ],
+  "template": {
+    "id": "template_oled_graphics",
+    "name": "OLED Grafika & Animáció",
+    "description": "Pattogó labda, geometriai alakzatok és szövegkiírás SSD1306 OLED kijelzőn",
+    "category": "Display",
+    "icon": "Monitor"
+  }
+}

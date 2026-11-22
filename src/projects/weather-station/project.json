@@ -1,0 +1,23 @@
+{
+  "id": "proj_weather_station",
+  "name": "ESP32 Weather Station & Rotary Menu",
+  "description": "Időjárásállomás BMP280 barométerrel, SSD1306 OLED kijelzővel és KY-040 forgó jeladós menürendszerrel",
+  "version": "1.0.0",
+  "author": "ESP Developer",
+  "targetBoard": "ESP32_DEVKIT_V1",
+  "mainFile": "src/main.ino",
+  "tags": [
+    "OLED",
+    "BMP280",
+    "Rotary Encoder",
+    "Menu System",
+    "I2C"
+  ],
+  "template": {
+    "id": "template_weather_station",
+    "name": "Időjárás Állomás & Rotary Menü",
+    "description": "Komplett projekt: BMP280 barométer és hőmérő, SSD1306 OLED kijelző és KY-040 menü navigáció",
+    "category": "Complete Project",
+    "icon": "CloudSun"
+  }
+}

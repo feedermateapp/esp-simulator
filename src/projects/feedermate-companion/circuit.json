@@ -1,0 +1,61 @@
+{
+  "board": "ESP32_DEVKIT_V1",
+  "peripherals": [
+    {
+      "id": "st7789_screen",
+      "type": "ST7789_DISPLAY",
+      "name": "ST7789 320x240 Színes IPS Kijelző",
+      "pins": {
+        "mosi": 23,
+        "sck": 18,
+        "cs": 27,
+        "dc": 4,
+        "rst": 25
+      },
+      "config": {
+        "width": 320,
+        "height": 240
+      }
+    },
+    {
+      "id": "rotary_knob",
+      "type": "KY040_ROTARY_ENCODER",
+      "name": "Integrált Forgó Jeladó (Rotary + SW Gomb)",
+      "pins": {
+        "clk": 19,
+        "dt": 21,
+        "sw": 22
+      }
+    },
+    {
+      "id": "btn_extra",
+      "type": "PUSH_BUTTON",
+      "name": "1. Gomb (KO / D14): Dobás Stopper",
+      "pins": {
+        "pin": 14
+      },
+      "config": {
+        "pullUp": true
+      }
+    },
+    {
+      "id": "btn_menu",
+      "type": "PUSH_BUTTON",
+      "name": "2. Gomb (D26): Taktikai Menü",
+      "pins": {
+        "pin": 26
+      },
+      "config": {
+        "pullUp": true
+      }
+    },
+    {
+      "id": "status_led",
+      "type": "LED",
+      "name": "Állapotjelző & Riasztó LED",
+      "pins": {
+        "pin": 13
+      }
+    }
+  ]
+}

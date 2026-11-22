@@ -1,0 +1,23 @@
+{
+  "board": "ESP32_DEVKIT_V1",
+  "peripherals": [
+    {
+      "id": "rotary",
+      "type": "KY040_ROTARY_ENCODER",
+      "name": "KY-040 Encoder",
+      "pins": {
+        "clk": 18,
+        "dt": 19,
+        "sw": 23
+      }
+    },
+    {
+      "id": "led",
+      "type": "LED",
+      "name": "Built-in LED",
+      "pins": {
+        "pin": 2
+      }
+    }
+  ]
+}

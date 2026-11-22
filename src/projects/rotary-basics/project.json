@@ -1,0 +1,21 @@
+{
+  "id": "proj_rotary_basics",
+  "name": "Rotary Encoder Counter Demo",
+  "description": "Egyszerű forgó jeladó számláló és iránykijelzés soros monitoron",
+  "version": "1.0.0",
+  "author": "ESP Developer",
+  "targetBoard": "ESP32_DEVKIT_V1",
+  "mainFile": "src/main.ino",
+  "tags": [
+    "Rotary",
+    "Interrupts",
+    "Serial"
+  ],
+  "template": {
+    "id": "template_rotary_basics",
+    "name": "Rotary Encoder Alapok",
+    "description": "Forgó jeladó pozíciószámláló megszakításokkal és gombnyomással",
+    "category": "Sensors",
+    "icon": "RotateCw"
+  }
+}

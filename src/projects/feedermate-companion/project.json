@@ -1,0 +1,26 @@
+{
+  "id": "proj_feedermate_step1",
+  "name": "FeederMate Pro Minimalist (ST7789 + Rotary + Gombok)",
+  "description": "FeederMate Pro Minimalist Dashboard: Óriási stopper, etetési ütem, száktartalom és forgó jeladós taktikai menürendszer.",
+  "version": "3.5.0",
+  "author": "FeederMate Team",
+  "targetBoard": "ESP32_DEVKIT_V1",
+  "mainFile": "src/main.ino",
+  "tags": [
+    "FeederMate",
+    "Pro v2.0",
+    "Main Menu",
+    "Catch Log",
+    "Keepnet",
+    "ST7789",
+    "Rotary Encoder",
+    "GPIO"
+  ],
+  "template": {
+    "id": "template_feedermate_companion",
+    "name": "🎣 FeederMate Smart Companion",
+    "description": "Horgász okoseszköz: Dobás stopper, Gyors halfogás rögzítő, Haltartó limit őr és BLE szinkronizáció",
+    "category": "Complete Project",
+    "icon": "Fish"
+  }
+}

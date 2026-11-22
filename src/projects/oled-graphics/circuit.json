@@ -1,0 +1,19 @@
+{
+  "board": "ESP32_DEVKIT_V1",
+  "peripherals": [
+    {
+      "id": "oled",
+      "type": "SSD1306_OLED",
+      "name": "SSD1306 OLED (128x64)",
+      "pins": {
+        "sda": 21,
+        "scl": 22
+      },
+      "config": {
+        "i2cAddress": "0x3C",
+        "width": 128,
+        "height": 64
+      }
+    }
+  ]
+}

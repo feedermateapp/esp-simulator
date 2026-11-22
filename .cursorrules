@@ -1,0 +1,13 @@
+# ESP32 Simulator AI Coding Rules
+
+Please strictly follow the project rules in AI_INSTRUCTIONS.md:
+1. Always adhere to the separation of concerns: `src/core/` (pure TS simulation, no React/DOM), `src/components/` (React 19 UI), `src/project/` (project management, circuit.json), `src/types/` (types).
+2. Never block the UI thread: `delay()` and main engine loop must be non-blocking async with micro-tick yield.
+3. Strict TypeScript typing (no arbitrary `any`). Check with `npx tsc --noEmit`.
+4. Hardware pinout conventions:
+   - I2C: SDA = GPIO 21, SCL = GPIO 22 (OLED 0x3C, BMP280 0x76).
+   - Rotary Encoder KY-040: CLK = GPIO 18, DT = GPIO 19, SW = GPIO 23. Emits 4-phase Gray code on rotate.
+   - Extra Buttons: GPIO 4, GPIO 5 (INPUT_PULLUP).
+   - Built-in LED: GPIO 2.
+5. Project management: Support multi-file projects, circuit.json wiring config, Arduino IDE and PlatformIO exports.
+6. Support WiFi (STA/AP, WebServer, MQTT) and Bluetooth (BLE GATT, BluetoothSerial) simulation.
